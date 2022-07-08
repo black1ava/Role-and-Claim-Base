@@ -1,0 +1,27 @@
+@model SigninUser
+@{
+  ViewData["Title"] = "Signin";
+}
+<div class="card">
+  <div class="card-body">
+    <div class="card-header">
+      <h3>Signin</h3>
+    </div>
+    <form asp-controller="Account" asp-action="Signin" method="post">
+      <div class="mb-3">
+        <label asp-for="Email"></label>
+        <input asp-for="Email" class="form-control">
+        <span asp-validation-for="Email" style="color:red"></span>
+      </div>
+      <div class="mb-3">
+        <label asp-for="Password"></label>
+        <input asp-for="Password" class="form-control">
+        <span asp-validation-for="Password" style="color:red"></span>
+      </div>
+      <div class="mb-3">
+        <button class="btn btn-primary">Signin</button>
+      </div>
+      <a asp-controller="Account" asp-action="Signup" class="card-link">Create an account</a>
+    </form>
+  </div>
+</div>

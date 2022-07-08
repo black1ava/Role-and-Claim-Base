@@ -1,0 +1,45 @@
+@model SignupUser
+@using IdentityAppFirstAttempt.Enum
+@{
+  ViewData["Title"] = "Signup";
+}
+<div class="card">
+  <div class="card-body">
+    <div class="card-header">
+      <h3>Signup</h3>
+    </div>
+    <form asp-controller="Account" asp-action="Signup" method="post">
+      <div class="mb-3">
+        <label asp-for="UserName"></label>
+        <input asp-for="UserName" class="form-control">
+        <span asp-validation-for="UserName" style="color:red"></span>
+      </div>
+      <div class="mb-3">
+        <label asp-for="Email"></label>
+        <input asp-for="Email" class="form-control">
+        <span asp-validation-for="Email" style="color:red"></span>
+      </div>
+      <div class="mb-3">
+        <label asp-for="Role"></label>
+        <select asp-for="Role" asp-items="@Html.GetEnumSelectList<Roles>()" class="form-select">
+          <option value="">Please select a role</option>
+        </select>
+        <span asp-validation-for="Role" style="color:red"></span>
+      </div>
+      <div class="mb-3">
+        <label asp-for="Password"></label>
+        <input asp-for="Password" class="form-control">
+        <span asp-validation-for="Password" style="color:red"></span>
+      </div>
+      <div class="mb-3">
+        <label asp-for="PasswordConfirmation"></label>
+        <input asp-for="PasswordConfirmation" class="form-control">
+        <span asp-validation-for="PasswordConfirmation" style="color:red"></span>
+      </div>
+      <div class="mb-3">
+        <button class="btn btn-primary">Signup</button>
+      </div>
+      <a asp-controller="Account" asp-action="Signin" class="card-link">Back to login</a>
+    </form>
+  </div>
+</div>
