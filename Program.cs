@@ -6,7 +6,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 String connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
 builder.Services.AddDbContext<ApplicationDbContext>(options => {
-    options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString));
+    options.UseSqlite(connectionString);
 });
 
 builder.Services.AddAuthentication("TestingCookie")

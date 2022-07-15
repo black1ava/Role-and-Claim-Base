@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/home/roeunboratharath/Desktop/folders/asp/Identity/IdentityAppFirstAttempt/IdentityAppFirstAttempt.csproj": {}
+    "/home/chheangmai/Desktop/Role-and-Claim-Base/IdentityAppFirstAttempt.csproj": {}
   },
   "projects": {
-    "/home/roeunboratharath/Desktop/folders/asp/Identity/IdentityAppFirstAttempt/IdentityAppFirstAttempt.csproj": {
+    "/home/chheangmai/Desktop/Role-and-Claim-Base/IdentityAppFirstAttempt.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/roeunboratharath/Desktop/folders/asp/Identity/IdentityAppFirstAttempt/IdentityAppFirstAttempt.csproj",
+        "projectUniqueName": "/home/chheangmai/Desktop/Role-and-Claim-Base/IdentityAppFirstAttempt.csproj",
         "projectName": "IdentityAppFirstAttempt",
-        "projectPath": "/home/roeunboratharath/Desktop/folders/asp/Identity/IdentityAppFirstAttempt/IdentityAppFirstAttempt.csproj",
-        "packagesPath": "/home/roeunboratharath/.nuget/packages/",
-        "outputPath": "/home/roeunboratharath/Desktop/folders/asp/Identity/IdentityAppFirstAttempt/obj/",
+        "projectPath": "/home/chheangmai/Desktop/Role-and-Claim-Base/IdentityAppFirstAttempt.csproj",
+        "packagesPath": "/home/chheangmai/.nuget/packages/",
+        "outputPath": "/home/chheangmai/Desktop/Role-and-Claim-Base/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/roeunboratharath/.nuget/NuGet/NuGet.Config"
+          "/home/chheangmai/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -52,6 +52,10 @@
               "target": "Package",
               "version": "[6.0.5, )"
             },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers",
               "suppressParent": "All",
@@ -76,7 +80,7 @@
           "downloadDependencies": [
             {
               "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[6.0.2, 6.0.2]"
+              "version": "[6.0.6, 6.0.6]"
             }
           ],
           "frameworkReferences": {
@@ -87,7 +91,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/6.0.102/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/6.0.106/RuntimeIdentifierGraph.json"
         }
       }
     }

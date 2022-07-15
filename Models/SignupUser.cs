@@ -21,6 +21,7 @@ namespace IdentityAppFirstAttempt.Models {
     public String Password { get; set; } = String.Empty;
     [Required(ErrorMessage = "Please confirm password")]
     [Compare("Password", ErrorMessage = "Password doesn't match")]
+    [DataType(DataType.Password)]
     public String PasswordConfirmation { get; set; } = String.Empty;
   }
 }
